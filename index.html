@@ -412,7 +412,7 @@
         }
 
         function checkPassword() {
-            if (passwordInput.value === correctPassword) {
+            if (passwordInput.value.toLowerCase() === correctPassword) {
                 sessionStorage.setItem('authenticated', 'true');
                 passwordScreen.classList.add('hidden');
                 errorMessage.classList.remove('show');
